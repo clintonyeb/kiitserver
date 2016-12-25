@@ -1,0 +1,8 @@
+import com.clinton.kiitsocial.Social
+
+model {
+	Iterable<Social> socialList
+}
+
+json tmpl.social(socialList ?: [])
+

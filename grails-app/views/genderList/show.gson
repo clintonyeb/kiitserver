@@ -1,0 +1,7 @@
+import com.clinton.kiitsocial.GenderList
+
+model {
+	GenderList genderList
+}
+
+json tmpl.genderList(genderList)

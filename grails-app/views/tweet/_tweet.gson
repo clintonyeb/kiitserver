@@ -1,0 +1,7 @@
+import com.clinton.kiitsocial.Tweet
+
+model {
+	Tweet tweet
+}
+
+json g.render(tweet)

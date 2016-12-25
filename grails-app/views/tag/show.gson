@@ -1,0 +1,7 @@
+import com.clinton.kiitsocial.Tag
+
+model {
+	Tag tag
+}
+
+json tmpl.tag(tag)

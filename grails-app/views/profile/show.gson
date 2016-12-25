@@ -1,0 +1,7 @@
+import com.clinton.kiitsocial.Profile
+
+model {
+	Profile profile
+}
+
+json tmpl.profile(profile)

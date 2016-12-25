@@ -1,0 +1,8 @@
+import com.clinton.kiitsocial.Announcement
+
+model {
+	Iterable<Announcement> announcementList
+}
+
+json tmpl.announcement(announcementList ?: [])
+

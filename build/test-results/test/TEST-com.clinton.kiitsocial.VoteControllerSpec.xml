@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.clinton.kiitsocial.VoteControllerSpec" tests="5" skipped="0" failures="4" errors="0" timestamp="2016-12-24T10:43:10" hostname="/0:0:0:0:0:0:0:1%lo" time="8.612">
+  <properties/>
+  <testcase name="Test the index action returns the correct response" classname="com.clinton.kiitsocial.VoteControllerSpec" time="8.143"/>
+  <testcase name="Test the save action correctly persists an instance" classname="com.clinton.kiitsocial.VoteControllerSpec" time="0.325">
+    <failure message="Condition not satisfied:&#10;&#10;Vote.count() == 1&#10;     |       |&#10;     0       false&#10;" type="org.spockframework.runtime.SpockComparisonFailure">Condition not satisfied:
+
+Vote.count() == 1
+     |       |
+     0       false
+
+	at com.clinton.kiitsocial.VoteControllerSpec.Test the save action correctly persists an instance(VoteControllerSpec.groovy:49)
+</failure>
+  </testcase>
+  <testcase name="Test that the show action returns the correct model" classname="com.clinton.kiitsocial.VoteControllerSpec" time="0.057">
+    <failure message="Condition not satisfied:&#10;&#10;vote!= null&#10;|   |&#10;|   false&#10;null&#10;" type="org.spockframework.runtime.ConditionNotSatisfiedError">Condition not satisfied:
+
+vote!= null
+|   |
+|   false
+null
+
+	at com.clinton.kiitsocial.VoteControllerSpec.Test that the show action returns the correct model(VoteControllerSpec.groovy:68)
+</failure>
+  </testcase>
+  <testcase name="Test the update action performs an update on a valid domain instance" classname="com.clinton.kiitsocial.VoteControllerSpec" time="0.045">
+    <failure message="Condition not satisfied:&#10;&#10;vote!= null&#10;|   |&#10;|   false&#10;null&#10;" type="org.spockframework.runtime.ConditionNotSatisfiedError">Condition not satisfied:
+
+vote!= null
+|   |
+|   false
+null
+
+	at com.clinton.kiitsocial.VoteControllerSpec.Test the update action performs an update on a valid domain instance(VoteControllerSpec.groovy:99)
+</failure>
+  </testcase>
+  <testcase name="Test that the delete action deletes an instance if it exists" classname="com.clinton.kiitsocial.VoteControllerSpec" time="0.041">
+    <failure message="Condition not satisfied:&#10;&#10;Vote.count() == 1&#10;     |       |&#10;     0       false&#10;" type="org.spockframework.runtime.SpockComparisonFailure">Condition not satisfied:
+
+Vote.count() == 1
+     |       |
+     0       false
+
+	at com.clinton.kiitsocial.VoteControllerSpec.Test that the delete action deletes an instance if it exists(VoteControllerSpec.groovy:120)
+</failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

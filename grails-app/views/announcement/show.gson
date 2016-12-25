@@ -1,0 +1,7 @@
+import com.clinton.kiitsocial.Announcement
+
+model {
+	Announcement announcement
+}
+
+json tmpl.announcement(announcement)

@@ -1,0 +1,8 @@
+import com.clinton.kiitsocial.Avatar
+
+model {
+	Iterable<Avatar> avatarList
+}
+
+json tmpl.avatar(avatarList ?: [])
+

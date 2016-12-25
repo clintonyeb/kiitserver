@@ -1,0 +1,7 @@
+import com.clinton.kiitsocial.Social
+
+model {
+	Social social
+}
+
+json g.render(social)

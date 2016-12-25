@@ -1,0 +1,13 @@
+import com.clinton.kiitsocial.Profile
+
+model {
+    Profile profile
+}
+
+json {
+    avartarType profile?.avatarImage?.avatarType
+    bio profile?.bio
+    contact profile?.contact
+    address profile?.address
+    emailId profile?.emailId
+}

@@ -1,0 +1,15 @@
+import com.clinton.kiitsocial.Avatar
+
+model {
+    Avatar avatar
+}
+
+json {
+    id avatar.id
+    avatarName avatar.avatarName
+    avatarType avatar.avatarType
+    avatarSize avatar.avatarBytes.size()
+    dateCreated avatar.dateCreated
+    lastUpdated avatar.lastUpdated
+    data avatar.avatarBytes.encodeBase64().toString()
+}

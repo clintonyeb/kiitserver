@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.clinton.auth.UserControllerSpec" tests="5" skipped="0" failures="0" errors="0" timestamp="2016-12-24T10:37:25" hostname="/0:0:0:0:0:0:0:1%lo" time="8.914">
+  <properties/>
+  <testcase name="Test the index action returns the correct response" classname="com.clinton.auth.UserControllerSpec" time="7.813"/>
+  <testcase name="Test the save action correctly persists an instance" classname="com.clinton.auth.UserControllerSpec" time="0.842"/>
+  <testcase name="Test that the show action returns the correct model" classname="com.clinton.auth.UserControllerSpec" time="0.076"/>
+  <testcase name="Test the update action performs an update on a valid domain instance" classname="com.clinton.auth.UserControllerSpec" time="0.117"/>
+  <testcase name="Test that the delete action deletes an instance if it exists" classname="com.clinton.auth.UserControllerSpec" time="0.065"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

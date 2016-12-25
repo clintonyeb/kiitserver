@@ -1,0 +1,7 @@
+import com.clinton.kiitsocial.Event
+
+model {
+	Event event
+}
+
+json g.render(event)

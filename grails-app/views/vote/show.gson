@@ -1,0 +1,7 @@
+import com.clinton.kiitsocial.Vote
+
+model {
+	Vote vote
+}
+
+json tmpl.vote(vote)

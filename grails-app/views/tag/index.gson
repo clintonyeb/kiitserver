@@ -1,0 +1,8 @@
+import com.clinton.kiitsocial.Tag
+
+model {
+	Iterable<Tag> tagList
+}
+
+json tmpl.tag(tagList ?: [])
+

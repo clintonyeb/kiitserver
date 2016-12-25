@@ -1,0 +1,8 @@
+import com.clinton.kiitsocial.Song
+
+model {
+	Iterable<Song> songList
+}
+
+json tmpl.song(songList ?: [])
+

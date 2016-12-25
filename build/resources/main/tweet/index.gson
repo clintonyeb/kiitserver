@@ -1,0 +1,8 @@
+import com.clinton.kiitsocial.Tweet
+
+model {
+	Iterable<Tweet> tweetList
+}
+
+json tmpl.tweet(tweetList ?: [])
+

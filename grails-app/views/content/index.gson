@@ -1,0 +1,8 @@
+import com.clinton.kiitsocial.Content
+
+model {
+	Iterable<Content> contentList
+}
+
+json tmpl.content(contentList ?: [])
+

@@ -1,0 +1,7 @@
+import com.clinton.kiitsocial.SocialNetworkList
+
+model {
+	SocialNetworkList socialNetworkList
+}
+
+json tmpl.socialNetworkList(socialNetworkList)

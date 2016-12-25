@@ -1,0 +1,7 @@
+import com.clinton.kiitsocial.Song
+
+model {
+	Song song
+}
+
+json tmpl.song(song)

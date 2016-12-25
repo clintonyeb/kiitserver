@@ -1,0 +1,7 @@
+import com.clinton.kiitsocial.Article
+
+model {
+	Article article
+}
+
+json g.render(article)

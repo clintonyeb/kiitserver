@@ -1,0 +1,8 @@
+import com.clinton.kiitsocial.Profile
+
+model {
+	Iterable<Profile> profileList
+}
+
+json tmpl.profile(profileList ?: [])
+

@@ -1,0 +1,7 @@
+import com.clinton.kiitsocial.Song
+
+model {
+	Song song
+}
+
+json g.render(song)

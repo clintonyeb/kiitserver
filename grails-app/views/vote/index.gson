@@ -1,0 +1,8 @@
+import com.clinton.kiitsocial.Vote
+
+model {
+	Iterable<Vote> voteList
+}
+
+json tmpl.vote(voteList ?: [])
+
