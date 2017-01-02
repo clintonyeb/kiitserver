@@ -1,7 +1,13 @@
 import com.clinton.kiitsocial.Profile
 
 model {
-	Profile profile
+    Profile profile
 }
 
-json g.render(profile)
+json {
+    avartarType profile?.avatarImage?.avatarType
+    bio profile?.bio
+    contact profile?.contact
+    address profile?.address
+    emailId profile?.emailId
+}

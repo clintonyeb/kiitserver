@@ -1,7 +1,17 @@
 import com.clinton.auth.User
 
 model {
-	User user
+    User user
 }
 
-json g.render(user)
+json {
+    id user.id
+    username user.username
+    uniqueId user.uniqueId
+    avatar {
+        name user.smallAvatar?.avatarName
+        data user.smallAvatar?.avatarBytes?.encodeBase64()?.toString()
+        type user.smallAvatar?.avatarType
+        lastCreated user.smallAvatar?.lastUpdated
+    }
+}

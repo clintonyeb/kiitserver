@@ -1,6 +1,6 @@
 package com.clinton.auth
 
-class AuthenticationTaken {
+class AuthenticationToken {
     String tokenValue
     String username
 

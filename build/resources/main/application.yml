@@ -8,7 +8,7 @@ grails:
             proxies: false
 info:
     app:
-        name: 'Kiitserver'
+        name: 'kiitserver'
         version: '0.1'
         grailsVersion: '3.2.4'
 spring:
