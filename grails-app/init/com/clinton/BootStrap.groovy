@@ -8,7 +8,7 @@ import com.clinton.kiitsocial.GenderList
 class BootStrap {
 
     def init = { servletContext ->
-        def user = new User(username: 'clinton', password: 'password', uniqueId: 1356881, gender: GenderList.MALE)
+        def user = new User(username: '1356881', password: 'password', nickname: '1356881', gender: GenderList.MALE)
                 .save(failOnError: true)
         def userRole = Role.findOrSaveByAuthority("ROLE_USER")
         UserRole.create(user, userRole, true)

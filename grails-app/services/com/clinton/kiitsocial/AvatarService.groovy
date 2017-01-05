@@ -53,7 +53,7 @@ class AvatarService {
         smallAvatar.avatarName = "default"
         smallAvatar.avatarType = "png"
         if (gender == GenderList.FEMALE)
-            image =  this.class.getResourceAsStream('/images/fem-avatar-tiny.png')
+            image =  this.class.getResourceAsStream('/images/male-avatar-tiny.png')
         else
             image =  this.class.getResourceAsStream('/images/male-avatar-tiny.png')
         assert image

@@ -4,6 +4,7 @@ class UrlMappings {
 
     static mappings = {
         "/api/tweets"(resources: "tweet")
+        "/api/guests/users"(resources: "user")
         "/api/users"(resources: "user")
         "/api/avatars/$size"(controller: "avatar", action: "saveAvatar")
         "/api/avatars/$id/$size?"(controller: "avatar", action: "showAvatar")

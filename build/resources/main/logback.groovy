@@ -37,6 +37,7 @@ if (Environment.isDevelopmentMode() && targetDir != null) {
 else {
     root(ERROR, ['STDOUT'])
 }
+
 logger("org.springframework.security", DEBUG, ['STDOUT'], false)
 logger("grails.plugin.springsecurity", DEBUG, ['STDOUT'], false)
 logger("org.pac4j", DEBUG, ['STDOUT'], false)

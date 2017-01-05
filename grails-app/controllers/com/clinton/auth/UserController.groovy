@@ -1,8 +1,11 @@
 package com.clinton.auth
 
-import static org.springframework.http.HttpStatus.*
+import grails.plugin.springsecurity.annotation.Secured
 import grails.transaction.Transactional
 
+import static org.springframework.http.HttpStatus.*
+
+@Secured(['ROLE_ANONYMOUS'])
 @Transactional(readOnly = true)
 class UserController {
 
@@ -15,8 +18,9 @@ class UserController {
         respond User.list(params), model:[userCount: User.count()]
     }
 
-    def show(User user) {
-        respond user
+    def show() {
+        String username = params.get('username')
+        respond User.findByUsername(username)
     }
 
     @Transactional
@@ -29,6 +33,7 @@ class UserController {
 
         if (!user.smallAvatar)
             user.smallAvatar = avatarService.createAvatar(user.gender)
+        assert user.smallAvatar
 
         if (user.hasErrors()) {
             transactionStatus.setRollbackOnly()

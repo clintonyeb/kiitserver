@@ -1,10 +1,10 @@
 package com.clinton.kiitsocial
 
 import grails.plugin.springsecurity.annotation.Secured
+import grails.transaction.Transactional
 import org.springframework.web.multipart.MultipartFile
 
 import static org.springframework.http.HttpStatus.*
-import grails.transaction.Transactional
 
 @Secured(['ROLE_ADMIN', 'ROLE_USER'])
 @Transactional(readOnly = true)

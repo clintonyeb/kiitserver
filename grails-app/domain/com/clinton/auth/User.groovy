@@ -23,7 +23,7 @@ class User implements Serializable {
     boolean passwordExpired
 
     //starting custom domain...can touch this
-    Integer uniqueId
+    String nickname
     Date dateCreated
     Date lastUpdated
     Avatar smallAvatar
@@ -64,7 +64,7 @@ class User implements Serializable {
         password blank: false, minSize: 5, validator: { pass, user ->
             pass != user.username
         }
-        uniqueId blank: false, unique: true, range: 1000..2000000000
+        nickname blank: false, unique: true, size: 4..20
 
         profile unique: true, nullable: true
         contents nullable: true

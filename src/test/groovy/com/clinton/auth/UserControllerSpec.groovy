@@ -15,7 +15,7 @@ class UserControllerSpec extends Specification {
         assert params != null
         params['username'] = 'clinton'
         params['password'] = 'mypass'
-        params['uniqueId'] = 1233444
+        params['nickname'] = 1233444
         params['gender'] = GenderList.MALE
     }
 
@@ -66,7 +66,7 @@ class UserControllerSpec extends Specification {
 
     void "Test that the show action returns the correct model"() {
         when:"The show action is executed with a null domain"
-            controller.show(null)
+            controller.show()
 
         then:"A 404 error is returned"
             response.status == 404
@@ -75,7 +75,7 @@ class UserControllerSpec extends Specification {
             populateValidParams(params)
             response.reset()
             def user= new User(params).save()
-            controller.show(user)
+            controller.show()
 
         then:"A model is populated containing the domain instance"
             user!= null
